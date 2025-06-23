@@ -3,13 +3,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 p-4 font-sans transition-colors duration-300">
-      
+
       <header className="text-center py-10 relative">
         <h1 className="text-4xl font-bold">Thiruselvan E</h1>
         <button
           onClick={() => {
             document.documentElement.classList.toggle("dark");
-
           }}
           className="absolute top-4 right-4 px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded text-sm shadow"
         >
@@ -59,39 +58,37 @@ export default function Portfolio() {
       </section>
 
       <section className="max-w-4xl mx-auto mb-10">
-  <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Projects</h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div className="bg-white dark:bg-gray-800 rounded shadow p-4">
-      <img
-  src="/images/robot-card.png"
-  alt="Human Following Robot"
-  className="rounded mb-3"
-/>
-      <h3 className="font-bold text-lg">Human Following Robot</h3>
-      <p className="text-sm mb-2">Real-time path tracking and obstacle avoidance using Arduino.</p>
-      <div className="flex gap-4">
-        <a href="https://github.com/Thiruselvan123" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm underline">GitHub</a>
-        <a href="#" className="text-blue-600 dark:text-blue-400 text-sm underline">Live Demo</a>
-      </div>
-    </div>
+        <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white dark:bg-gray-800 rounded shadow p-4 transform transition-transform hover:-translate-y-1 hover:shadow-lg">
+            <img
+              src="/images/robot-card.png"
+              alt="Human Following Robot"
+              className="rounded mb-3 transition-transform duration-300 hover:scale-105"
+            />
+            <h3 className="font-bold text-lg">Human Following Robot</h3>
+            <p className="text-sm mb-2">Real-time path tracking and obstacle avoidance using Arduino.</p>
+            <div className="flex gap-4">
+              <a href="https://github.com/Thiruselvan123" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm underline">GitHub</a>
+              <a href="#" className="text-blue-600 dark:text-blue-400 text-sm underline">Live Demo</a>
+            </div>
+          </div>
 
-    <div className="bg-white dark:bg-gray-800 rounded shadow p-4">
-      <img
-  src="/images/fire-robot-card.png"
-  alt="Fire-Fighting Robot"
-  className="rounded mb-3"
-/>
-
-      <h3 className="font-bold text-lg">Fire-Fighting Robot</h3>
-      <p className="text-sm mb-2">Autonomous robot that detects fire and extinguishes flames with embedded logic.</p>
-      <div className="flex gap-4">
-        <a href="https://github.com/Thiruselvan123" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm underline">GitHub</a>
-        <a href="#" className="text-blue-600 dark:text-blue-400 text-sm underline">Live Demo</a>
-      </div>
-    </div>
-  </div>
-</section>
-
+          <div className="bg-white dark:bg-gray-800 rounded shadow p-4 transform transition-transform hover:-translate-y-1 hover:shadow-lg">
+            <img
+              src="/images/fire-robot-card.png"
+              alt="Fire-Fighting Robot"
+              className="rounded mb-3 transition-transform duration-300 hover:scale-105"
+            />
+            <h3 className="font-bold text-lg">Fire-Fighting Robot</h3>
+            <p className="text-sm mb-2">Autonomous robot that detects fire and extinguishes flames with embedded logic.</p>
+            <div className="flex gap-4">
+              <a href="https://github.com/Thiruselvan123" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm underline">GitHub</a>
+              <a href="#" className="text-blue-600 dark:text-blue-400 text-sm underline">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="max-w-4xl mx-auto mb-10">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Internships</h2>
