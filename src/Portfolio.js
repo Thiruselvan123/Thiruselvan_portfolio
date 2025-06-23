@@ -62,7 +62,12 @@ export default function Portfolio() {
   <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Projects</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div className="bg-white dark:bg-gray-800 rounded shadow p-4">
-      <img src="/images/robot-card.png" alt="Human Robot" className="rounded mb-3" />
+      <img
+  src="/images/robot-card.png"
+  alt="Human Following Robot"
+  className="rounded mb-3"
+/>
+
 
 
       <h3 className="font-bold text-lg">Human Following Robot</h3>
