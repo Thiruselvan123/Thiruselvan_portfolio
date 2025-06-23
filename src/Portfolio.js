@@ -1,11 +1,21 @@
-import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 p-4 font-sans">
-      <header className="text-center py-10">
+    <div className="min-h-screen bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 p-4 font-sans transition-colors duration-300">
+      
+      <header className="text-center py-10 relative">
         <h1 className="text-4xl font-bold">Thiruselvan E</h1>
+        <button
+          onClick={() => {
+            document.documentElement.classList.toggle("dark");
+
+          }}
+          className="absolute top-4 right-4 px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded text-sm shadow"
+        >
+          Toggle Dark Mode
+        </button>
+
         <p className="text-xl mt-2">Java & Python Developer</p>
         <div className="flex justify-center gap-4 mt-4">
           <a href="https://github.com/Thiruselvan123" target="_blank" rel="noopener noreferrer">
@@ -16,9 +26,10 @@ export default function Portfolio() {
           </a>
         </div>
         <a
-          href="/Thiruselvan_One_Page_Resume.docx"
+          href="Thiruselvan_Updated_Resume.pdf"
           className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700"
-          download
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Download Resume
         </a>
@@ -48,22 +59,30 @@ export default function Portfolio() {
       </section>
 
       <section className="max-w-4xl mx-auto mb-10">
-        <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Projects</h2>
-        <div className="space-y-4">
-          <div>
-            <h3 className="font-bold">Human Following Robot</h3>
-            <p>
-              Designed a robot using Arduino that tracks human movement, avoids obstacles, and adjusts paths in real-time.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-bold">Fire-Fighting Robot</h3>
-            <p>
-              Developed an autonomous robot that detects fire, navigates obstacles, and extinguishes flames using embedded logic.
-            </p>
-          </div>
-        </div>
-      </section>
+  <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Projects</h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="bg-white dark:bg-gray-800 rounded shadow p-4">
+      <img src="https://via.placeholder.com/400x200?text=Human+Following+Robot" alt="Human Robot" className="rounded mb-3" />
+      <h3 className="font-bold text-lg">Human Following Robot</h3>
+      <p className="text-sm mb-2">Real-time path tracking and obstacle avoidance using Arduino.</p>
+      <div className="flex gap-4">
+        <a href="https://github.com/Thiruselvan123" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm underline">GitHub</a>
+        <a href="#" className="text-blue-600 dark:text-blue-400 text-sm underline">Live Demo</a>
+      </div>
+    </div>
+
+    <div className="bg-white dark:bg-gray-800 rounded shadow p-4">
+      <img src="https://via.placeholder.com/400x200?text=Fire-Fighting+Robot" alt="Fire Bot" className="rounded mb-3" />
+      <h3 className="font-bold text-lg">Fire-Fighting Robot</h3>
+      <p className="text-sm mb-2">Autonomous robot that detects fire and extinguishes flames with embedded logic.</p>
+      <div className="flex gap-4">
+        <a href="https://github.com/Thiruselvan123" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm underline">GitHub</a>
+        <a href="#" className="text-blue-600 dark:text-blue-400 text-sm underline">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section className="max-w-4xl mx-auto mb-10">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Internships</h2>
@@ -81,6 +100,30 @@ export default function Portfolio() {
           <li>Front-End Development (HTML), Introduction to Python – Great Learning</li>
           <li>Wipro TalentNext (Java Full Stack)</li>
         </ul>
+      </section>
+
+      <section className="max-w-2xl mx-auto mb-10" id="contact">
+        <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Contact Me</h2>
+        <form action="https://formspree.io/f/xkgbqzvw" method="POST" className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium mb-1">Name</label>
+            <input type="text" name="name" required className="w-full px-3 py-2 border rounded" />
+          </div>
+          <div>
+            <label className="block text-sm font-medium mb-1">Email</label>
+            <input type="email" name="email" required className="w-full px-3 py-2 border rounded" />
+          </div>
+          <div>
+            <label className="block text-sm font-medium mb-1">Message</label>
+            <textarea name="message" rows="4" required className="w-full px-3 py-2 border rounded" />
+          </div>
+          <button
+            type="submit"
+            className="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700"
+          >
+            Send Message
+          </button>
+        </form>
       </section>
 
       <footer className="text-center text-sm py-4 border-t mt-10">
