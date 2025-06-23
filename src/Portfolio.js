@@ -57,7 +57,7 @@ export default function Portfolio() {
         </ul>
       </section>
 
-      <section className="max-w-4xl mx-auto mb-10">
+      <section className="max-w-4xl mx-auto mb-10 animate-fadeIn">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white dark:bg-gray-800 rounded shadow p-4 transform transition-transform hover:-translate-y-1 hover:shadow-lg">
