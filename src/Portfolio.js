@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 p-4 font-sans transition-colors duration-300">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-100 p-4 font-sans transition-colors duration-300">
 
       <header className="text-center py-10 relative">
         <h1 className="text-4xl font-bold">Thiruselvan E</h1>
@@ -34,7 +34,7 @@ export default function Portfolio() {
         </a>
       </header>
 
-      <section className="max-w-4xl mx-auto mb-10">
+      <section className="max-w-4xl mx-auto mb-10 animate-fadeIn">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-2">About Me</h2>
         <p>
           I’m an enthusiastic developer skilled in Java, Python, and C with a strong foundation in data structures,
@@ -43,7 +43,7 @@ export default function Portfolio() {
         </p>
       </section>
 
-      <section className="max-w-4xl mx-auto mb-10">
+      <section className="max-w-4xl mx-auto mb-10 animate-fadeIn">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Skills</h2>
         <ul className="grid grid-cols-2 gap-2 list-disc list-inside">
           <li>Java, Python, C</li>
@@ -57,7 +57,7 @@ export default function Portfolio() {
         </ul>
       </section>
 
-      <section className="max-w-4xl mx-auto mb-10 animate-fadeIn">
+      <section className="max-w-4xl mx-auto mb-10 animate-slideUp">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white dark:bg-gray-800 rounded shadow p-4 transform transition-transform hover:-translate-y-1 hover:shadow-lg">
@@ -90,7 +90,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section className="max-w-4xl mx-auto mb-10">
+      <section className="max-w-4xl mx-auto mb-10 animate-fadeIn">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Internships</h2>
         <ul className="list-disc list-inside">
           <li>Cloud Logic Technologies – Front-End Development Intern</li>
@@ -98,7 +98,7 @@ export default function Portfolio() {
         </ul>
       </section>
 
-      <section className="max-w-4xl mx-auto mb-10">
+      <section className="max-w-4xl mx-auto mb-10 animate-fadeIn">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Certifications</h2>
         <ul className="list-disc list-inside">
           <li>Programming Essentials in Python – Cisco</li>
@@ -108,7 +108,7 @@ export default function Portfolio() {
         </ul>
       </section>
 
-      <section className="max-w-2xl mx-auto mb-10" id="contact">
+      <section className="max-w-2xl mx-auto mb-10 animate-fadeIn" id="contact">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Contact Me</h2>
         <form action="https://formspree.io/f/xkgbqzvw" method="POST" className="space-y-4">
           <div>
