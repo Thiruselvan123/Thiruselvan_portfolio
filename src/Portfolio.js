@@ -62,14 +62,26 @@ export default function Portfolio() {
   <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Projects</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div className="bg-white dark:bg-gray-800 rounded shadow p-4">
-      <img src="/images/robot.png" alt="Human Following Robot" className="rounded mb-3" />
+      <img src="https://via.placeholder.com/400x200?text=Human+Following+Robot" alt="Human Robot" className="rounded mb-3" />
       <h3 className="font-bold text-lg">Human Following Robot</h3>
       <p className="text-sm mb-2">Real-time path tracking and obstacle avoidance using Arduino.</p>
-      <a href="https://github.com/Thiruselvan123" className="text-blue-600 dark:text-blue-400 text-sm">View Code</a>
+      <div className="flex gap-4">
+        <a href="https://github.com/Thiruselvan123" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm underline">GitHub</a>
+        <a href="#" className="text-blue-600 dark:text-blue-400 text-sm underline">Live Demo</a>
+      </div>
+    </div>
+
+    <div className="bg-white dark:bg-gray-800 rounded shadow p-4">
+      <img src="https://via.placeholder.com/400x200?text=Fire-Fighting+Robot" alt="Fire Bot" className="rounded mb-3" />
+      <h3 className="font-bold text-lg">Fire-Fighting Robot</h3>
+      <p className="text-sm mb-2">Autonomous robot that detects fire and extinguishes flames with embedded logic.</p>
+      <div className="flex gap-4">
+        <a href="https://github.com/Thiruselvan123" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm underline">GitHub</a>
+        <a href="#" className="text-blue-600 dark:text-blue-400 text-sm underline">Live Demo</a>
+      </div>
     </div>
   </div>
 </section>
-
 
 
       <section className="max-w-4xl mx-auto mb-10">
