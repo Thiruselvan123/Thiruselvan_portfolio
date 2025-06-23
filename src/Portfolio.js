@@ -67,9 +67,6 @@ export default function Portfolio() {
   alt="Human Following Robot"
   className="rounded mb-3"
 />
-
-
-
       <h3 className="font-bold text-lg">Human Following Robot</h3>
       <p className="text-sm mb-2">Real-time path tracking and obstacle avoidance using Arduino.</p>
       <div className="flex gap-4">
@@ -79,7 +76,12 @@ export default function Portfolio() {
     </div>
 
     <div className="bg-white dark:bg-gray-800 rounded shadow p-4">
-      <img src="https://via.placeholder.com/400x200?text=Fire-Fighting+Robot" alt="Fire Bot" className="rounded mb-3" />
+      <img
+  src="/images/fire-robot-card.png"
+  alt="Fire-Fighting Robot"
+  className="rounded mb-3"
+/>
+
       <h3 className="font-bold text-lg">Fire-Fighting Robot</h3>
       <p className="text-sm mb-2">Autonomous robot that detects fire and extinguishes flames with embedded logic.</p>
       <div className="flex gap-4">
